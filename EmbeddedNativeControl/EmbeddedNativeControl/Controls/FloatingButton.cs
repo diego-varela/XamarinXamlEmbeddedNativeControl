@@ -9,7 +9,6 @@ namespace EmbeddedNativeControl.Controls
 {
     #region using
 
-    using System;
     using System.Windows.Input;
     using Xamarin.Forms;
 
@@ -22,7 +21,7 @@ namespace EmbeddedNativeControl.Controls
     {
         private StackLayout innerLayout;
 
-        public static readonly BindableProperty TapCommandProperty = BindableProperty.Create("TapCommand", typeof(ICommand), typeof(FloatingButton), null, BindingMode.TwoWay,propertyChanged: OnTapCommandChange);
+        public static readonly BindableProperty TapCommandProperty = BindableProperty.Create("TapCommand", typeof(ICommand), typeof(FloatingButton), null, BindingMode.TwoWay, propertyChanged: OnTapCommandChange);
 
         private static void OnTapCommandChange(BindableObject bindable, object oldvalue, object newvalue)
         {
